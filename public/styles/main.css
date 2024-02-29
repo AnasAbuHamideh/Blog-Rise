@@ -1,0 +1,312 @@
+/*************       Home Page       *************/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+p {
+    color: #8f8f8f;
+}
+
+a {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container-fluid {
+    padding: 3% 15% 7%;
+}
+
+li {
+    margin-right: 40px;
+}
+
+
+/* NAVBAR SECTIONS */
+
+.navbar-brand {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.navbar {
+    padding-bottom: 4.5rem;
+}
+
+.nav-link {
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: #FFFFFF;
+}
+
+
+/* Title Section */
+
+.title-img {
+    width: 60%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+}
+
+.title-img-container {
+    position: relative;
+}
+
+#title {
+    background-color: turquoise;
+}
+
+
+/* Features Section */
+
+#features {
+    padding: 7% 15%;
+    background-color: #FFFFFF;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 4.5%;
+}
+
+.icon {
+    color: turquoise;
+    margin-bottom: 1rem;
+}
+
+.icon:hover {
+    color: rgb(15, 128, 116);
+}
+
+
+/* Testimonials Section */
+
+#testimonials {
+    background-color: turquoise;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.testimonial-img {
+    border-radius: 100%;
+    width: 10%;
+    margin: 20px;
+}
+
+
+/* Carousel Section */
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+
+/* Footer Section*/
+
+#footer {
+    background-color: #FFFFFF;
+    padding: 3% 15%;
+    text-align: center;
+}
+
+.con-icon {
+    margin: 3% 1%;
+}
+
+
+/*************       Create Page       *************/
+
+form {
+    margin-top: 50px;
+}
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+[type="submit"] {
+    width: 100%;
+    background: #3586ff;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+}
+
+[type="submit"]:hover {
+    background: #3586ff;
+}
+
+.feedback-input {
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid #3586ff;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.feedback-input:focus {
+    border: 2px solid #3586ff;
+}
+
+
+/*************       All Blogs Page       *************/
+
+.post {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.post-header {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.post-title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.post-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-author {
+    margin: 0;
+    color: rgb(28, 199, 190);
+}
+
+.post-date {
+    margin: 0;
+    color: #666;
+}
+
+.post-content {
+    color: #444;
+}
+
+.post-footer {
+    margin-top: 10px;
+}
+
+.like-btn,
+.comment-btn,
+.share-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.like-btn:hover,
+.comment-btn:hover,
+.share-btn:hover {
+    background-color: #0056b3;
+}
+
+
+/*************       Edit Page       *************/
+
+.post {
+    margin-bottom: 20px;
+}
+
+.edit-post {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.new-info,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+/* Styles for the delete button */
+
+.delete-button {
+    padding: 8px 16px;
+    background-color: #dc3545;
+    /* Red color */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    /* Add margin for spacing */
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+    /* Darker red color on hover */
+}

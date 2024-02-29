@@ -1,0 +1,28 @@
+<%- include("partials/header.ejs") %>
+    <h1>Edit Blog Post</h1>
+    <% if (posts && posts.length > 0) { %>
+        <% posts.forEach(post => { %>
+            <div class="post">
+                <form class="edit-post" action="/edit/<%= post.id %>" method="POST">
+                    <!-- Include post ID in the action URL -->
+                    <label for="title">Title:</label>
+                    <input class="new-info" type="text" id="new-title" name="title" value="<%= post.title %>">
+                    <label for="author">Author:</label>
+                    <input class="new-info" type="text" id="new-author" name="author" value="<%= post.author %>">
+                    <label for="content">Content:</label>
+                    <textarea id="new-content" name="content"><%= post.content %></textarea>
+                    <label for="date">Date:</label>
+                    <!-- Use a read-only input for date -->
+                    <input class="new-info" type="text" id="date" name="date" value="<%= post.date %>" readonly>
+                    <button type="submit">Update</button>
+                </form>
+                <form action="/delete/<%= post.id %>" method="DELETE">
+                    <!-- Use a form to submit a DELETE request -->
+                    <button class="delete-button" type="delete">Delete</button>
+                </form>
+            </div>
+            <% }); %>
+                <% } else { %>
+                    <p>No post found.</p>
+                    <% } %>
+                        <%- include("partials/footer.ejs") %>

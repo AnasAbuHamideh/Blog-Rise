@@ -1,0 +1,12 @@
+<%- include("partials/header.ejs")  %>
+    <h1>Create New Blog:</h1>
+    </section>
+    <div class="container-fluid">
+        <form action="/create" method="POST">
+            <input name="blog-name" type="text" class="feedback-input" placeholder="Blog-Name" />
+            <input name="author" type="text" class="feedback-input" placeholder="Author" />
+            <textarea name="text" class="feedback-input" placeholder="Blog-Content"></textarea>
+            <input type="submit" value="CREATE" />
+        </form>
+    </div>
+    <%- include( "partials/footer.ejs") %>

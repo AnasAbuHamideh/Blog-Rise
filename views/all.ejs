@@ -1,0 +1,36 @@
+<%- include("partials/header.ejs")  %>
+
+    <% if (locals.posts && locals.posts.length > 0) { %>
+        <!-- Check if posts array exists and has posts -->
+        <% locals.posts.forEach(post => { %>
+            <div class="post">
+                <div class="post-header">
+                    <h2 class="post-title">
+                        <%= post.title %>
+                    </h2>
+                    <div class="post-info">
+                        <h3 class="post-author">
+                            <%= post.author %>
+                        </h3>
+                        <p class="post-date">
+                            <%= post.date %>
+                        </p>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p>
+                        <%= post.content %>
+                    </p>
+                </div>
+                <div class="post-footer">
+                    <button class="like-btn">Like</button>
+                    <button class="comment-btn">Comment</button>
+                    <button class="share-btn">Share</button>
+                </div>
+            </div>
+            <% }); %>
+                <% } else { %>
+                    <p>No posts available.</p>
+                    <% } %>
+
+                        <%- include( "partials/footer.ejs") %>
